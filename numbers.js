@@ -27,5 +27,4 @@ function convertDigitsToWords(input) {
     }
     return text.join(" ").concat(".");
 }
-console.log("Default: " + input);
 console.log("Converted: " + convertDigitsToWords(input));
