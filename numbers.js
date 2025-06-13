@@ -12,7 +12,6 @@ function convertDigitsToWords(input) {
         9: "nine"
     };
     let text = input.replace(".", "").split(" ");
-    //console.log(text);
     for (let i = 0; i < text.length; i++) {
         if (text[i].length === 1 && text[i] in digitWords) {
             if (i === 0) {
@@ -24,5 +23,6 @@ function convertDigitsToWords(input) {
         }
     }
     return text.join(" ").concat(".");
-}
-console.log("Converted: " + convertDigitsToWords(input));
+};
+
+btnNum.addEventListener("click", () => inputNum.value = convertDigitsToWords(inputNum.value));
