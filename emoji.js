@@ -13,4 +13,6 @@ function emoji() {
             text[i] = emojiMap[text[i]]
         }
     }
+    return text.join(" ").concat(".");
 }
+console.log("Converted: " + emoji(input));
