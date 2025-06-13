@@ -25,4 +25,5 @@ function convertDigitsToWords(input) {
     return text.join(" ").concat(".");
 };
 
+// Output
 btnNum.addEventListener("click", () => inputNum.value = convertDigitsToWords(inputNum.value));

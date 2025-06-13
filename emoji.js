@@ -16,4 +16,5 @@ function emoji(input) {
     return text.join(" ").concat(".");
 };
 
+// Output
 btnEmoji.addEventListener("click", () => inputEmoji.value = emoji(inputEmoji.value));
