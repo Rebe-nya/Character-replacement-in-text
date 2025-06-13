@@ -1,4 +1,4 @@
-function emoji() {
+function emoji(input) {
     const emojiMap = {
         ":)": "😊",
         ":(": "☹️",
@@ -9,10 +9,11 @@ function emoji() {
     };
     let text = input.replace(".", "").split(" ");
     for (let i = 0; i < text.length; i++) {
-        if (text[i].length === 2) {
+        if (text[i].length === 2 && text[i] in emojiMap) {
             text[i] = emojiMap[text[i]]
         }
     }
     return text.join(" ").concat(".");
-}
-console.log("Converted: " + emoji(input));
+};
+
+btnEmoji.addEventListener("click", () => inputEmoji.value = emoji(inputEmoji.value));
