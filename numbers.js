@@ -1,5 +1,3 @@
-const input = document.getElementById("textareaInput").value;
-
 function convertDigitsToWords(input) {
     const digitWords = {
         0: "zero",
