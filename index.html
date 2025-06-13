@@ -7,9 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <textarea id="textareaInput">1 apple 4 oranges and pear 6</textarea>
+    <header>
+        <h1>Character replacement in text</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="column">
+                <div class="textarea-header">
+                    <h2>Number converter</h2>
+                    <textarea id="textareaNum">0 1 2 3 4 5 6 7 8 9.</textarea>
+                    <div>
+                        <input type="button" value="OK" id="btnNum" class="button">
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div>
+                    <h2>Emoji converter</h2>
+                    <textarea id="textareaEmoji">:) :( ;) :D <3 XD</textarea>
+                    <div>
+                        <input type="button" value="OK" id="btnEmoji" class="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="input.js"></script>
-    <!-- <script src="numbers.js"></script> -->
+    <script src="numbers.js"></script>
     <script src="emoji.js"></script>
 </body>
 </html>
