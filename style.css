@@ -3,4 +3,44 @@ body {
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    color: #28fff4;
+    font-size: 4vh;
+}
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 2.8vh;
+}
+textarea {
+    resize: vertical;
+    width: 35vw;
+    height: 50vh;
+    font-size: 2.5vh;
+    border-radius: 5px;
+}
+
+/* Classes */
+.container {
+    display: flex;
+}
+.column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.button {
+    display: flex;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1vh 2vw;
+    font-size: 2.5vh;
+    cursor: pointer;
+    margin: 1vh;
+    justify-self: center;
 }
